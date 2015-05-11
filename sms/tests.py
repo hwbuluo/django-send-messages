@@ -55,6 +55,7 @@ class SMSTestCase(SMSTestCaseBase):
     def test_multiple_message(self):
         from sms.backends import locmem
         from sms.message import SMSMessage
+
         backend = locmem.SMSBackend()
         mobile = '13311101111'
         m1 = SMSMessage(tpl_id="416222",
@@ -64,4 +65,3 @@ class SMSTestCase(SMSTestCaseBase):
         m3 = SMSMessage(tpl_id="2",content="#code#=户外部落",to=(mobile,))
         m4 = SMSMessage(tpl_id="3",content="#code#=户外部落",to=(mobile,))
         backend.send_messages([m1,m2,m3,m4])
-

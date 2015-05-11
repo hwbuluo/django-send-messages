@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from django.utils import six
 
 import logging
-logger = logging.getLogger('hwbuluo')
+logger = logging.getLogger('django-send-messages-sms')
 
 class SMSMessage(object):
     """
