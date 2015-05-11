@@ -6,7 +6,7 @@ And it can easily be extended to other sms backend.
 Install
 -------
 ``
-pip install django-send-messages
+pip install git+ssh://git@github.com/hwbuluo/django-send-messages.git
 ``
 
 Usage
@@ -16,30 +16,6 @@ Add ``sms`` to your ``INSTALLED_APPS`` setting and add an
 ``include('sms.urls')`` at any point in your url-conf.
 
 You can see the testproj for detail.
-
-You can test the app:
-
-1. setup a virtualenv,and activate it.
-
-``
-virtualenv --distribute venv
-``
-
-``
-source venv/bin/activate
-``
-
-2. install the dependency
-
-``
-pip install -r test-requirements.py
-``
-
-3. test it use py.test
-
-``
-py.test sms/tests.py
-``
 
 Enjoy it!
 
@@ -69,9 +45,28 @@ Enjoy it!
 
 - **清晰的commit历史** - 保证你的pull请求的每次commit操作都是有意义的。如果你开发中需要执行多次的即时commit操作，那么请把它们放到一起再提交pull请求。
 
-## 运行测试
+## 运行测试(Run tests)
 
-``` bash
+You can test the app:
+
+1. setup a virtualenv,and activate it.
+
+``
+virtualenv --distribute venv
+``
+
+``
+source venv/bin/activate
+``
+
+2. install the dependency
+
+``
+pip install -r test-requirements.py
+``
+
+3. test it use py.test
+
+``
 py.test sms/tests.py
-```
-
+``
