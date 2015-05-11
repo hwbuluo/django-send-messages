@@ -19,7 +19,9 @@ Add ``sms`` to your ``INSTALLED_APPS`` setting and add an
 You can see the testproj for detail.
 
 You can test the app:
+
 1. setup a virtualenv,and activate it.
+
 ``
 virtualenv --distribute venv
 
@@ -27,14 +29,15 @@ source venv/bin/activate
 ``
 
 2. install the dependency
+
 ``
 pip install -r test-requirements.py
 ``
 
 3. test it use py.test
+
 ``
 py.test sms/tests.py
 ``
-
 
 Enjoy it!
