@@ -13,7 +13,6 @@ setup(
     url='https://github.com/hwbuluo/django-send-messages',
     packages=find_packages(),
     include_package_data=True,
-    zip_safe=False,
     extras_require = {
       'django': ['Django'],
     },
