@@ -48,11 +48,13 @@ Enjoy it!
 
 贡献代码指南
 
-我们非常欢迎大家来贡献代码，我们会向贡献者致以最诚挚的敬意。
+我们非常欢迎大家来贡献代码，我们会向贡献者致以最诚挚的敬意,让我们一起创造出好用的开源云消息接入服务产品。
 
-一般可以通过在Github上提交[Pull Request](https://github.com/hwbuluo/django-send-messages)来贡献代码。
+目前我们只是引入了云片的短信服务，让Django开发者可以很容易的使用云片提供的服务进行短信发送，并提供了测试的mock backend，和接收云片的短信发送成功回执。但是还有一些云片的回调并未处理，具体可以参考[云片文档](http://www.yunpian.com/api/sms.html)，在view.py中进行添加。
 
 我们计划下一步引入微信的sendbackend，可以通过微信公众平台提供的模版消息接口，给指定人员发送消息，欢迎大家参与进来。
+
+一般可以通过在Github上提交[Pull Request](https://github.com/hwbuluo/django-send-messages)来贡献代码。
 
 ## Pull Request要求
 
