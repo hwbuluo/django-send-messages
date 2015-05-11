@@ -24,7 +24,9 @@ You can test the app:
 
 ``
 virtualenv --distribute venv
+``
 
+``
 source venv/bin/activate
 ``
 
