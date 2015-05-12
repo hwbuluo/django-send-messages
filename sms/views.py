@@ -10,7 +10,7 @@ from django.utils.encoding import smart_str
 from sms.signals import received_yunpian_sms_reply
 from django.utils import timezone
 
-logger = logging.getLogger('hwbuluo')
+logger = logging.getLogger('django-send-messages-sms')
 
 @csrf_exempt
 @require_http_methods(["POST"])
