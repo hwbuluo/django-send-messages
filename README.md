@@ -51,7 +51,7 @@ You can test the app:
 
 1. setup a virtualenv,and activate it.
 ``
-virtualenv --distribute venv
+virtualenv --distribute venv & source venv/bin/activate
 ``
 2. install the dependency
 ``
