@@ -17,3 +17,5 @@ timezone.now()
 """
 received_yunpian_sms_reply = Signal( providing_args=["content","received_by"] )
 
+received_yunpian_sms_status = Signal( providing_args=["content","received_by"] )
+
