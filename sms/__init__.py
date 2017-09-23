@@ -9,7 +9,7 @@ import re
 import django
 from distutils.version import StrictVersion
 
-if StrictVersion(django.get_version()) > StringVersion("1.8"):
+if StrictVersion(django.get_version()) > StrictVersion("1.8"):
     from django.utils.module_loading import import_string
 else:
     from django.utils.module_loading import import_by_path as import_string
