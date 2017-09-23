@@ -6,7 +6,10 @@ from __future__ import unicode_literals
 
 import re
 
-if float(django.get_version()) > 1.8:
+import django
+from distutils.version import StrictVersion
+
+if StrictVersion(django.get_version()) > StringVersion("1.8"):
     from django.utils.module_loading import import_string
 else:
     from django.utils.module_loading import import_by_path as import_string
