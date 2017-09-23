@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'django-send-messages',
-    version = '1.0.1',
+    version = '1.0.2',
     license='BSD',
     description = 'A simple API to send messages, includes Yunpian backend and Wechat(weixin) backend.',
     long_description=open('README.md').read(),
